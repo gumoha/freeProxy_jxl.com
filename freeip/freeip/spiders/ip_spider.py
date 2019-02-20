@@ -19,7 +19,7 @@ class FIpSpider(scrapy.Spider):
         dict_ips = json.loads(plain_txt)
         iproxy = dict_ips['data']['data']
 
-        print('页数：{}'.format(dict_ips['data']['current_page']))
+        print('链接:{0},页数:{1}'.format(response.url, dict_ips['data']['current_page']))
         print('获取到的IP数量:{}'.format(len(iproxy)))
 
         for ip in iproxy:

@@ -90,7 +90,7 @@ DEFAULT_REQUEST_HEADERS = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 COOKIES_ENABLED = False
 
-ITEM_PIPELINE = {
+ITEM_PIPELINES = {
    'freeip.pipelines.FreeipPipeline': 300,
 }
 
