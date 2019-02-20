@@ -96,7 +96,7 @@ ITEM_PIPELINES = {
 
 DOWNLOADER_MIDDLEWARES = {
    'freeip.middlewares.UserAgentMiddleware':1,
-   'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+   #'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
 }
 
 LOG_ENABLED =True

@@ -54,7 +54,7 @@ def ipCheck(ip):
 
 if __name__ =='__main__':
 	ips = ip_spider()
-	with open("F:\Scrapy\IP_jiangxianli\-FreeIP3-.json",'w') as f:
+	with open("F:\Scrapy\IP_jiangxianli\-FreeIP_liangxianliIP-.json",'w') as f:
 		for ip in ips:
 			if ipCheck(ip) is True:
 				print('此ip：%s 验证可用，保存~~~' % ip)
