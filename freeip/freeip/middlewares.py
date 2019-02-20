@@ -103,7 +103,7 @@ class FreeipDownloaderMiddleware(object):
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
 
-class UAMiddleware(object):
+class UserAgentMiddleware(object):
     def __init__(self):
         # 随机获取更换user_agent
         self.UA_list = [

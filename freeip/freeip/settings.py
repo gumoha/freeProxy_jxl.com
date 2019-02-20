@@ -91,11 +91,12 @@ DEFAULT_REQUEST_HEADERS = {
 COOKIES_ENABLED = False
 
 ITEM_PIPELINES = {
-   'freeip.pipelines.FreeipPipeline': 300,
+   'freeip.pipelines.FreeipPipeline': 100,
 }
 
 DOWNLOADER_MIDDLEWARES = {
-   'freeip.middlewares.UAMiddleware':100,
+   'freeip.middlewares.UserAgentMiddleware':1,
+   'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
 }
 
 LOG_ENABLED =True
